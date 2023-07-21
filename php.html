@@ -1,0 +1,29 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Récupérer les données du formulaire
+$name = $_POST["name"];
+$comment = $_POST["comment"];
+
+// Connexion à la base de données (remplacez les paramètres par vos propres
+informations)
+$conn = new mysqli("localhost", "utilisateur", "motdepasse",
+"ma_base_de_donnees");
+
+// Vérifier si la connexion a réussi
+if ($conn->connect_error) {
+die("Erreur de connexion à la base de données : " . $conn->connect_error);
+}
+
+// Préparer et exécuter la requête SQL pour insérer le commentaire dans la table
+des avis
+$sql = "INSERT INTO avis (nom_client, commentaire) VALUES ('$name', '$comment')";
+if ($conn->query($sql) === TRUE) {
+echo "Avis soumis avec succès !";
+} else {
+echo "Erreur lors de la soumission de l'avis : " . $conn->error;
+}
+
+// Fermer la connexion à la base de données
+$conn->close();
+}
+?>

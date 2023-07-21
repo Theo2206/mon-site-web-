@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #000000, #220045);
+  }
+  
+  header {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    color: #4a0041;
+  }
+
+  h3{
+    color: aliceblue;
+    font-size: 50px;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #6f1d8d;
+  }
+  
+  .content p {
+    text-align: center;
+  }
+  
+  .content a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+ /* Le reste du code CSS reste inchangé */
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .image {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .image p {
+    text-align: center;
+    margin-top: 5px;
+  }
+  /* Le reste du code CSS reste inchangé */
+
+.content a {
+    display: block;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  border: 1px solid #000000; /* Contour d'épaisseur 1px */
+  padding: 8px 16px; /* Espacement intérieur */
+  border-radius: 5px; /* Bord arrondi pour un aspect plus esthétique */
+  transition: background-color 0.3s ease; /* Ajout d'une transition en douceur */
+  }
+  
+  .content a:hover {
+    background-color: #410244; /* Changement de couleur de fond au survol */
+    color: #FFFFFF; /* Changement de couleur du texte au survol */
+  }
+  .content a:active {
+    background-color: #0056b3; /* Couleur différente lors du clic */
+    transition: none; /* Désactiver la transition pour un effet immédiat */
+  }
+  /* Le reste du code CSS reste inchangé */
+
+header {
+    /* Styles de l'en-tête restent inchangés */
+  }
+  
+  header h1 {
+    /* Styles du titre restent inchangés */
+  }
+  
+  .content {
+    /* Styles du contenu restent inchangés */
+  }
+  
+  .gallery {
+    /* Styles de la galerie restent inchangés */
+  }
+  
+  .links {
+    /* Styles des liens restent inchangés */
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px 0;
+  }
+  /* Le reste du code CSS reste inchangé */
+
+header {
+    
+    align-items: center; /* Aligne les éléments verticalement au centre */
+    background-color: #000000;
+    padding: 10px;
+  }
+  
+  header img {
+    width: 90px; /* Taille du logo (ajustez selon vos besoins) */
+    height: 40px;
+    margin-right: 10px; /* Espacement à droite pour le titre */
+  }
+  
+  header h1 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin: 0; /* Réinitialise les marges par défaut pour le titre */
+  }
+  
+  /* Le reste du code CSS pour le contenu et le bas de page reste inchangé */
+  /* Le reste du code CSS reste inchangé */
+
+.content {
+    /* Styles du contenu restent inchangés */
+  }
+  
+  .review-form {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .review-form h2 {
+    color: #FF69B4; /* Couleur rose pour le titre */
+  }
+  
+  .review-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .review-form input,
+  .review-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  
+  .review-form input[type="submit"] {
+    background-color: #FF69B4; /* Couleur rose pour le bouton Envoyer */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .review-form input[type="submit"]:hover {
+    background-color: #FF1493; /* Couleur rose foncé au survol */
+  }
+  
+  .reviews {
+    background-color: #FF69B4; /* Couleur rose pour la section des avis */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .reviews h2 {
+    color: #FFFFFF;
+  }
+  
+  .review {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
